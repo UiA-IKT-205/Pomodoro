@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Pomodoro</string>
+    <string name="default_time_display">00:00:00</string>
+</resources>
