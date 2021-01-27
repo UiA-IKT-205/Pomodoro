@@ -16,6 +16,9 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+    <!-- Set time duration buttons -->
+
     <Button
         android:id="@+id/startCountdownButton"
         android:layout_width="wrap_content"
@@ -24,7 +27,49 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/countDownView" />
+        app:layout_constraintTop_toBottomOf="@+id/countDownView"
+         />
+
+    <Button
+        android:id="@+id/setTimeDurationTo30MinutesBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/countDowntimeDuration30Minutes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/setTimeDurationTo60MinutesBt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startCountdownButton"
+        />
+
+    <Button
+        android:id="@+id/setTimeDurationTo60MinutesBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/countDowntimeDuration60Minutes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/setTimeDurationTo90MinutesBt"
+        app:layout_constraintStart_toEndOf="@id/setTimeDurationTo30MinutesBt"
+        app:layout_constraintTop_toBottomOf="@+id/startCountdownButton" />
+
+    <Button
+        android:id="@+id/setTimeDurationTo90MinutesBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/countDowntimeDuration90Minutes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/setTimeDurationTo120MinutesBt"
+        app:layout_constraintStart_toEndOf="@id/setTimeDurationTo60MinutesBt"
+        app:layout_constraintTop_toBottomOf="@+id/startCountdownButton" />
+
+    <Button
+        android:id="@+id/setTimeDurationTo120MinutesBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/countDowntimeDuration120Minutes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/setTimeDurationTo90MinutesBt"
+        app:layout_constraintTop_toBottomOf="@+id/startCountdownButton" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

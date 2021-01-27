@@ -1,6 +1,7 @@
 package no.uia.ikt205.pomodoro
 
 import no.uia.ikt205.pomodoro.util.millisecondsToDescriptiveTime
+import no.uia.ikt205.pomodoro.util.minutesToMilliSeconds
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -21,5 +22,10 @@ class ExampleUnitTest {
         assertEquals("00:00:00", millisecondsToDescriptiveTime(1))
         assertEquals("00:01:30", millisecondsToDescriptiveTime(90000))
         assertEquals("02:30:01",millisecondsToDescriptiveTime(9001000))
+    }
+
+    @Test
+    fun testMinuteToMsConvertsion(){
+        assertEquals(60000, minutesToMilliSeconds(1))
     }
 }
